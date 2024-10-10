@@ -9,7 +9,7 @@ module.exports = {
         "custom-purple": "#290B68",
       },
       boxShadow: {
-        custom: "0 4px 14px rgba(0, 0, 0, 0.25)", // Custom shadow
+        custom: "1px 1px 5px rgba(41, 11, 104,0.8)",
       },
     },
   },
