@@ -107,7 +107,7 @@ const Home = () => {
           </motion.nav>
         )}
       </header>
-      <section className="flex flex-row pt-[100px] items-center mb-[200px]">
+      <section className="flex flex-row pt-[100px] items-center mb-[120px]">
         <img
           src={profileImg}
           alt="profile picture"
