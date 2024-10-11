@@ -5,7 +5,8 @@ import userIcon from "../assets/userIcon.png";
 
 const About = () => {
   return (
-    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[70px] rounded-tl-[14px] rounded-tr-[14px]">
+    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] rounded-tl-[14px] rounded-tr-[14px] absolute right-0 left-0 z-0">
+      <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[300px]"></motion.div>
       <div className="flex flex-row space-x-2 items-center mt-[14px]">
         <img src={userIcon} alt="user icon" className="h-[34px] w-[40px]" />
         <span className="text-custom-purple font-bold text-[34px]">
