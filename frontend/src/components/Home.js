@@ -20,7 +20,7 @@ const Home = () => {
       <header className="flex justify-center">
         {navExist ? (
           <motion.div
-            className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md rounded-bl-md w-1/2 z-20"
+            className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md rounded-bl-md w-1/2 z-30"
             whileHover={{
               scale: 1,
             }}
@@ -50,7 +50,7 @@ const Home = () => {
               duration: 0.5,
               delay: 0.1,
             }}
-            className="fixed flex flex-row space-x-8 justify-center z-20 items-center bg-custom-purple pl-8 pr-8 h-14 text-white font-inter rounded-br-3xl rounded-bl-3xl shadow-custom"
+            className="fixed flex flex-row space-x-8 justify-center z-30 items-center bg-custom-purple pl-8 pr-8 h-14 text-white font-inter rounded-br-3xl rounded-bl-3xl shadow-custom"
           >
             <div className="font-bold text-2xl">&lt;/&gt;</div>
             <div className="flex space-x-8">

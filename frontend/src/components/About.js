@@ -27,10 +27,13 @@ const About = () => {
             complex problems and deliver efficient, impactful software
             solutions.
           </p>
-          <motion.button className="bg-custom-purple shadow-custom w-[140px] text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]">
+          <motion.a
+            href="/resume.pdf"
+            className="bg-custom-purple shadow-custom w-[140px] text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]"
+          >
             <span className="pb-1">resume</span>
             <IoIosArrowForward className="font-bold" />
-          </motion.button>
+          </motion.a>
         </div>
       </div>
     </section>
