@@ -16,7 +16,7 @@ const Work = () => {
             Projects
           </span>
         </div>
-        <div className="flex flex-row space-x-[20px]">
+        <div className="flex flex-row space-x-[20px] mt-[70px]">
           <div className="flex flex-col space-y-[20px]">
             <div className="w-[420px] h-[320px] bg-white rounded-[17px] flex flex-col justify-between">
               <div className=""></div>
