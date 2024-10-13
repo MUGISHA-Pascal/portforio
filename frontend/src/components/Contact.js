@@ -17,7 +17,7 @@ const Contact = () => {
           Get in Touch
         </span>
       </div>
-      <div className="flex flex-row bg-[#D9D9D9] rounded-[16px] p-[20px] mt-[30px]">
+      <div className="flex flex-row bg-[#D9D9D9] rounded-[16px] p-[20px] mt-[30px] items-center justify-center">
         <form className="h-[400px] w-[500px]  flex flex-col justify-center space-y-[30px] pt-[20px]">
           <div className="relative flex flex-row items-center justify-center">
             <FaUser className="absolute right-[420px] text-custom-purple" />
