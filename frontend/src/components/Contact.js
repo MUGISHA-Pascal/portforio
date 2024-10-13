@@ -46,7 +46,7 @@ const Contact = () => {
           <div className="relative flex flex-row items-start justify-center">
             <AiFillMessage className="absolute right-[420px] top-[12px] text-custom-purple" />
             <textarea
-              className="bg-white p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
+              className="bg-white p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] h-[120px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Message"
             />
           </div>

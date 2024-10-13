@@ -16,9 +16,12 @@ const About = () => {
       <div className="flex flex-row space-x-[40px] mt-[70px] justify-center items-center">
         <div className="bg-custom-purple h-[200px] rounded-full w-[5px]"></div>
         <div className="flex flex-col space-y-[55px] mb-[10px]">
-          <p className="w-[1001px] leading-6 text-left">
-            I’m{" "}
-            <span className="text-custom-purple font-bold">MUGISHA Pascal</span>
+          <p className="w-[1001px] leading-6 text-left text-[15px]">
+            I’m
+            <span className="text-custom-purple font-bold">
+              {" "}
+              MUGISHA Pascal
+            </span>
             , a software engineer specializing in frontend and backend
             development, UI/UX design, and machine learning. I’m passionate
             about building seamless user experiences, creating robust

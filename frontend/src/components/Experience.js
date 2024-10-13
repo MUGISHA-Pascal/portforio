@@ -21,9 +21,9 @@ const Experience = () => {
           </motion.div>
           <motion.div className="flex flex-row  ">
             <IoMdArrowDropleft className="text-custom-purple w-[30px] h-[30px] absolute right-[488px] " />
-            <motion.div className="h-[80px] rounded-[5px] w-[500px] bg-custom-purple text-left pl-[20px] pt-[3px] pb-[3px] leading-[24px]">
-              <p className="font-bold text-[20px] text-white">CodeAlpha</p>
-              <p className="font-bold text-[15px] text-white">
+            <motion.div className="h-[80px] rounded-[5px] w-[500px] bg-custom-purple text-left pl-[20px] pt-[7px] pb-[3px]">
+              <p className="font-bold text-[17px] text-white">CodeAlpha</p>
+              <p className="font-bold text-[13px] text-white">
                 Machine learning developer | Part time intern
               </p>
               <p className="text-[12px] text-white font-thin">

@@ -20,11 +20,11 @@ const Education = () => {
           </motion.div>
           <motion.div className="flex flex-row  ">
             <IoMdArrowDropleft className="text-custom-purple w-[30px] h-[30px] absolute right-[488px] " />
-            <motion.div className="h-[80px] rounded-[5px] w-[500px] bg-custom-purple text-left pl-[20px] pt-[3px] pb-[3px] leading-[24px]">
-              <p className="font-bold text-[20px] text-white">
+            <motion.div className="h-[80px] rounded-[5px] w-[500px] bg-custom-purple text-left pl-[20px] pt-[7px] pb-[3px] ">
+              <p className="font-bold text-[17px] text-white">
                 Rwanda Coding Academy
               </p>
-              <p className="font-bold text-[15px] text-white">
+              <p className="font-bold text-[13px] text-white">
                 Software Development and Embedded systems{" "}
               </p>
               <p className="text-[12px] text-white font-thin">2023 - 2026 </p>

@@ -11,6 +11,9 @@ module.exports = {
       boxShadow: {
         custom: "1px 1px 5px rgba(41, 11, 104,0.8)",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
