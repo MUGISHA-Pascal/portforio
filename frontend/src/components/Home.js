@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import profileImg from "../assets/pascalProfile.jpg";
+import { FaCode } from "react-icons/fa6";
 
 const Home = () => {
   const [navExist, setNavExist] = useState(true);
@@ -52,7 +53,7 @@ const Home = () => {
             }}
             className="fixed flex flex-row space-x-8 justify-center z-30 items-center bg-custom-purple pl-8 pr-8 h-14 text-white font-inter rounded-br-3xl rounded-bl-3xl shadow-custom"
           >
-            <div className="font-bold text-2xl">&lt;/&gt;</div>
+            <FaCode className="font-bold text-white text-2xl" />
             <div className="flex space-x-8">
               <motion.a
                 variants={navVariants}
