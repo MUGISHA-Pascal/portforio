@@ -193,16 +193,16 @@ const Home = () => {
           </motion.nav>
         )}
       </header>
-      <section className="flex flex-row pt-[100px] items-center mb-[120px]">
+      <section className="flex flex-row pt-[100px] items-center mb-[120px] max-sm:mb-[70px] max-sm:pt-[50px]">
         <img
           src={profileImg}
           alt="profile picture"
-          className="w-[200px] h-[200px] rounded-full object-cover ml-[100px]"
+          className="w-[200px] h-[200px] rounded-full object-cover ml-[100px] max-sm:ml-[30px] max-sm:w-[130px] max-sm:h-[130px]"
         />
-        <div className="flex flex-row  ml-[100px] items-center justify-center">
-          <div className="bg-custom-purple h-[150px] rounded-full w-[5px]"></div>
-          <div className="pl-[30px] pt-[17px]">
-            <h1 className="font-bold text-[40px] text-left">
+        <div className="flex flex-row max-sm:ml-[20px]  ml-[100px] items-center justify-center">
+          <div className="bg-custom-purple h-[150px] max-sm:h-[100px] max-sm:w-[8px] rounded-full w-[5px]"></div>
+          <div className="pl-[30px] pt-[17px] max-sm:pl-[10px]">
+            <h1 className="font-bold text-[40px] text-left max-sm:text-[17px]">
               MUGISHA <span className="text-custom-purple">Pascal</span>
             </h1>
             <img
