@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import profileImg from "../assets/pascalProfile.jpg";
 import { FaCode } from "react-icons/fa6";
+import { TiThMenu } from "react-icons/ti";
 
 const Home = () => {
   const [navExist, setNavExist] = useState(true);
@@ -15,27 +16,111 @@ const Home = () => {
       borderBottomWidth: "3px",
     },
   };
+  const navVariants2 = {
+    hover2: {
+      borderBottomColor: "white",
+      borderBottomWidth: "3px",
+    },
+    hidden2: {
+      borderBottomColor: "#290B68",
+      borderBottomWidth: "3px",
+    },
+  };
+  const menuToggle = () => {
+    const displayDiv = document.getElementById("displayDiv");
+    if (displayDiv.classList.contains("hidden")) {
+      displayDiv.classList.remove("hidden");
+      displayDiv.classList.add("flex");
+    } else {
+      displayDiv.classList.add("hidden");
+    }
+  };
 
   return (
     <div>
-      <header className="flex justify-center">
+      <header className="flex justify-center max-sm:w-full max-sm:mx-0">
         {navExist ? (
-          <motion.div
-            className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md rounded-bl-md w-1/2 z-30"
-            whileHover={{
-              scale: 1,
-            }}
-            onHoverStart={() => {
-              setNavExist(false);
-            }}
-            transition={{
-              type: "spring",
-              damping: 20,
-              stiffness: 300,
-              duration: 0.5,
-              delay: 0.1,
-            }}
-          ></motion.div>
+          <>
+            <motion.div
+              className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md max-sm:hidden rounded-bl-md w-1/2 z-30"
+              whileHover={{
+                scale: 1,
+              }}
+              onHoverStart={() => {
+                setNavExist(false);
+              }}
+              transition={{
+                type: "spring",
+                damping: 20,
+                stiffness: 300,
+                duration: 0.5,
+                delay: 0.1,
+              }}
+            ></motion.div>
+            <motion.div className="  hidden max-sm:flex max-sm:flex-row max-sm:w-full max-sm:justify-between">
+              <FaCode className="font-bold text-custom-purple mx-[20px] my-[10px] w-[30px] h-[30px]" />
+              <div>
+                <TiThMenu
+                  className="font-bold text-custom-purple mx-[20px] my-[10px] w-[30px] h-[30px]"
+                  onClick={menuToggle}
+                />
+                <div
+                  id="displayDiv"
+                  className="hidden text-[10px] flex-col rounded-[5px] space-y-[10px] items-center justify-center h-[200px] w-[100px] right-0 absolute bg-custom-purple text-white"
+                >
+                  <motion.a
+                    variants={navVariants2}
+                    whileHover="hover2"
+                    initial="hidden2"
+                  >
+                    Home
+                  </motion.a>
+                  <motion.a
+                    variants={navVariants2}
+                    whileHover="hover2"
+                    initial="hidden2"
+                  >
+                    About
+                  </motion.a>
+                  <motion.a
+                    variants={navVariants2}
+                    whileHover="hover2"
+                    initial="hidden2"
+                  >
+                    Skills
+                  </motion.a>
+                  <motion.a
+                    variants={navVariants2}
+                    whileHover="hover2"
+                    initial="hidden2"
+                  >
+                    Experience
+                  </motion.a>
+                  <motion.a
+                    variants={navVariants2}
+                    whileHover="hover2"
+                    initial="hidden2"
+                  >
+                    Education
+                  </motion.a>
+                  <motion.a
+                    variants={navVariants2}
+                    whileHover="hover2"
+                    initial="hidden2"
+                  >
+                    Projects
+                  </motion.a>
+                  <motion.a
+                    variants={navVariants2}
+                    whileHover="hover2"
+                    initial="hidden2"
+                  >
+                    Contact
+                  </motion.a>
+                </div>
+              </div>
+            </motion.div>
+          </>
         ) : (
           <motion.nav
             whileHover={{
