@@ -5,7 +5,7 @@ import userIcon from "../assets/userIcon.png";
 
 const About = () => {
   return (
-    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] rounded-tl-[14px] rounded-tr-[14px] absolute right-0 left-0 z-0">
+    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] w-full">
       <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[300px]"></motion.div>
       <div className="flex flex-row space-x-2 items-center mt-[14px]">
         <img src={userIcon} alt="user icon" className="h-[34px] w-[40px]" />
@@ -18,10 +18,7 @@ const About = () => {
         <div className="flex flex-col space-y-[55px] mb-[10px]">
           <p className="w-[1001px] leading-6 text-left text-[15px]">
             I’m
-            <span className="text-custom-purple font-bold">
-              {" "}
-              MUGISHA Pascal
-            </span>
+            <span className="text-custom-purple font-bold">MUGISHA Pascal</span>
             , a software engineer specializing in frontend and backend
             development, UI/UX design, and machine learning. I’m passionate
             about building seamless user experiences, creating robust

@@ -10,8 +10,8 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <div className="font-inter">
+    <div className="App overflow-x-hidden">
+      <div className="font-inter relative flex flex-col items-center justify-center">
         <Home />
         <About />
         <Skills />

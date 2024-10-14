@@ -7,7 +7,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { FaHeart } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <footer className="text-white bg-custom-purple mt-[3000px] w-full absolute z-30 pt-[30px] p-[30px] flex flex-col space-y-[15px]">
+    <footer className="text-white bg-custom-purple w-full pt-[30px] p-[30px] flex flex-col space-y-[15px]">
       <div className="flex flex-row space-x-[120px] ">
         <div className="flex flex-col space-y-[20px]">
           <p className="font-bold text-[20px]">MUGISHA Pascal’s portforio</p>

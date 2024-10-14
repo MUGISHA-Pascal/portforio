@@ -5,7 +5,7 @@ import { IoMdArrowDropleft } from "react-icons/io";
 
 const Experience = () => {
   return (
-    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[300px] rounded-tl-[14px] rounded-tr-[14px] z-20 top-[1500px] absolute right-0 left-0">
+    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[70px] w-full">
       <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
       <div className="flex flex-row space-x-[20px] items-center mt-[14px] justify-center">
         <BsFillBriefcaseFill className="h-[36px] w-[42px] text-custom-purple pt-[5px]" />
