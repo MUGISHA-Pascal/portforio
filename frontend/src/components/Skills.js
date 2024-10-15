@@ -31,7 +31,7 @@ import opencvIcon from "../assets/opencv.png";
 
 const Skills = () => {
   return (
-    <section className="bg-white flex flex-col justify-center items-center pb-[70px] w-full">
+    <section className="bg-white flex flex-col justify-center items-center pb-[70px] max-sm:pb-[30px] w-full">
       <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
       <div className="flex flex-row space-x-[20px] items-center mt-[14px] max-sm:space-x-[7px] justify-center ">
         <FaLaptopCode className="h-[36px] w-[42px] text-custom-purple pt-[5px] max-sm:w-[30px] max-sm:h-[30px] max-sm:pb-[6px]" />
@@ -39,7 +39,7 @@ const Skills = () => {
           Skills & Abilities
         </span>
       </div>
-      <div className="bg-[#D9D9D9] w-[1240px] max-sm:w-full max-sm:px-[20px] h-[450px] mt-[60px] max-sm:grid max-sm:grid-cols-2 max-sm:gap-[5px] rounded-[14px] flex flex-row sm:space-x-[30px] justify-center m-[5px] pt-[23px]">
+      <div className="bg-[#D9D9D9] w-[1240px] max-sm:pb-[30px] max-sm:mt-[20px] max-sm:w-full max-sm:px-[20px] h-[450px] mt-[60px] max-sm:grid max-sm:grid-cols-2 max-sm:gap-[5px] rounded-[14px] flex flex-row sm:space-x-[30px] justify-center m-[5px] pt-[23px]">
         <div className="bg-[#FFFFFF] flex flex-col items-center w-[270px] h-[400px] rounded-[5px] max-sm:w-[160px] max-sm:h-[274px]">
           <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md max-sm:h-[3px] max-sm:w-[70px] rounded-bl-md w-[160px]"></motion.div>
           <p className="text-custom-purple font-bold text-[20px] mt-[14px] max-sm:text-[10px]">
@@ -211,23 +211,26 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#FFFFFF] flex flex-col  items-center w-[270px] h-[400px] rounded-[5px]">
-          <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[160px]"></motion.div>
+        <div className="bg-[#FFFFFF] flex flex-col items-center w-[270px] h-[400px] rounded-[5px] max-sm:w-[160px] max-sm:h-[140px]">
+          <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md max-sm:h-[3px] max-sm:w-[70px] rounded-bl-md w-[160px]"></motion.div>
           <p className="text-custom-purple font-bold text-[20px] mt-[14px] max-sm:text-[10px]">
             Mobile development
           </p>
           <div className="flex flex-row space-x-[4px] mt-[30px]">
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
-                <FaReact className="w-[30px] h-[30px] text-[#00D8FF]" />
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[5px] pl-[3px]">
+                <FaReact className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#00D8FF]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   React native
                 </p>
               </div>
             </div>
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
-                <img src={flutterIcon} className="w-[30px] h-[30px]" />
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[5px] max-sm:space-x-[3px]">
+                <img
+                  src={flutterIcon}
+                  className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
+                />{" "}
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Flutter
                 </p>
@@ -235,35 +238,44 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#FFFFFF] flex flex-col items-center w-[270px] h-[400px] rounded-[5px]">
-          <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[160px]"></motion.div>
+        <div className="bg-[#FFFFFF] flex flex-col items-center w-[270px] h-[400px] rounded-[5px] max-sm:w-[160px] max-sm:h-[140px]">
+          <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md max-sm:h-[3px] max-sm:w-[70px] rounded-bl-md w-[160px]"></motion.div>
           <p className="text-custom-purple font-bold text-[20px] mt-[14px] max-sm:text-[10px]">
             Machine learning
           </p>
           <div className="flex flex-row space-x-[4px] mt-[30px]">
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px]  flex flex-row items-center pl-[3px] space-x-[5px]">
-                <SiPytorch className="w-[30px] h-[30px] text-[#EE4C2C]" />
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[5px] pl-[3px]">
+                <SiPytorch className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#EE4C2C]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Pytorch
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
-                <img src={opencvIcon} className="w-[34px] h-[30px]" />
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[5px]">
+                <img
+                  src={opencvIcon}
+                  className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] "
+                />{" "}
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Opencv
                 </p>
               </div>
             </div>
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
-                <img src={pandasIcon} className="w-[25px] h-[30px]" />
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[5px] max-sm:space-x-[3px]">
+                <img
+                  src={pandasIcon}
+                  className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
+                />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Pandas
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
-                <img src={tensolFlowIcon} className="w-[30px] h-[30px]" />
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+                <img
+                  src={tensolFlowIcon}
+                  className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
+                />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Tensolflow
                 </p>
