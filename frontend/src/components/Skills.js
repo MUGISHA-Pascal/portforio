@@ -106,6 +106,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={figmaIcon}
+                  alt="figma icon"
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -140,9 +141,10 @@ const Skills = () => {
                   Spring boot
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[15px]">
                 <img
                   src={firebasIcon}
+                  alt="firebase icon"
                   className="w-[25px] h-[30px] max-sm:w-[15px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -172,6 +174,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={awsIcon}
+                  alt="AWS icon"
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#38BDF8]"
                 />{" "}
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -193,6 +196,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={postgresIcon}
+                  alt="postgres Icon"
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -202,6 +206,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={mongodbIcon}
+                  alt="mongoDB icon"
                   className="w-[20px] h-[30px] max-sm:w-[10px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -229,6 +234,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[10px] max-sm:space-x-[3px]">
                 <img
                   src={flutterIcon}
+                  alt="flutter icon"
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
                 />{" "}
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -254,6 +260,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={opencvIcon}
+                  alt="opencv icon"
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] "
                 />{" "}
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -265,6 +272,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[10px] max-sm:space-x-[3px]">
                 <img
                   src={pandasIcon}
+                  alt="pandas icon"
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
@@ -274,6 +282,7 @@ const Skills = () => {
               <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={tensolFlowIcon}
+                  alt="tensol flow Icon"
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">

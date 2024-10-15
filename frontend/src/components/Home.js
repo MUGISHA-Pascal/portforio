@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import profileImg from "../assets/pascalProfile.jpg";
 import { FaCode } from "react-icons/fa6";
+import ParticleBackground from "./ParticleBackground";
 import { TiThMenu } from "react-icons/ti";
 
 const Home = () => {
@@ -37,12 +38,12 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <header className="flex justify-center max-sm:w-full max-sm:mx-0">
         {navExist ? (
           <>
             <motion.div
-              className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md max-sm:hidden rounded-bl-md w-1/2 z-30"
+              className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md max-sm:hidden rounded-bl-md w-1/2 z-50"
               whileHover={{
                 scale: 1,
               }}
@@ -193,11 +194,12 @@ const Home = () => {
           </motion.nav>
         )}
       </header>
-      <section className="flex flex-row pt-[100px] items-center mb-[120px] max-sm:mb-[70px] max-sm:pt-[50px]">
+      <section className="flex relative sm:ml-[270px] flex-row pt-[100px] w-full items-center mb-[120px] max-sm:mb-[70px] max-sm:pt-[50px]">
+        <ParticleBackground />
         <img
           src={profileImg}
           alt="profile picture"
-          className="w-[200px] h-[200px] rounded-full object-cover ml-[100px] max-sm:ml-[30px] max-sm:w-[130px] max-sm:h-[130px]"
+          className="w-[200px] h-[200px] rounded-full object-cover max-sm:ml-[30px] max-sm:w-[130px] max-sm:h-[130px]"
         />
         <div className="flex flex-row max-sm:ml-[20px]  ml-[100px] items-center justify-center">
           <div className="bg-custom-purple h-[150px] max-sm:h-[100px] max-sm:w-[8px] rounded-full w-[5px]"></div>

@@ -15,7 +15,7 @@ const Experience = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <motion.div className="bg-custom-purple h-[170px] max-sm:h-[100px] max-sm:w-[2px] w-[5px]"></motion.div>
-        <motion.div className="absolute z-30 flex flex-row space-x-[20px] mt-[40px] max-sm:mt-[20px] ml-[520px] max-sm:space-x-[5px] max-sm:ml-[176px]">
+        <motion.div className="absolute z-20 flex flex-row space-x-[20px] mt-[40px] max-sm:mt-[20px] ml-[520px] max-sm:space-x-[5px] max-sm:ml-[176px]">
           <motion.div className="border-custom-purple border-[4px] max-sm:w-[15px] h-[30px] shadow-custom flex justify-center max-sm:h-[15px] max-sm:border-[2px] items-center bg-white rounded-full w-[30px] ">
             <BsFillBriefcaseFill className="h-[15px] w-[15px] max-sm:h-[7.5px] max-sm:w-[7.5px]" />
           </motion.div>

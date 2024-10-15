@@ -9,7 +9,7 @@ import loginImage from "../assets/loginPic.png";
 import { FaPhone } from "react-icons/fa6";
 const Contact = () => {
   return (
-    <section className="bg-white flex flex-col justify-center items-center pb-[70px]  max-sm:pb-[30px] max-sm:w-full">
+    <section className="bg-[#FFFFFF] w-full flex flex-col justify-center items-center pb-[70px]  max-sm:pb-[30px] max-sm:w-full">
       <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
       <div className="flex flex-row sm:space-x-[20px] items-center max-sm:space-x-[2px] max-sm:mt-[5px] mt-[14px] justify-center">
         <GrContact className="h-[36px] w-[42px] max-sm:w-[30px] max-sm:h-[30px] max-sm:pb-[6px] text-custom-purple pt-[5px]" />
@@ -50,8 +50,8 @@ const Contact = () => {
               placeholder="Message"
             />
           </div>
-          <motion.button className="bg-custom-purple shadow-custom w-[140px] max-sm:w-[100px] max-sm:text-[14px] max-sm: text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]">
-            <span className="pb-1">submit</span>
+          <motion.button className="bg-custom-purple shadow-custom w-[120px] max-sm:w-[100px] ml-[52px] max-sm:text-[14px] max-sm: text-white font-bold text-[17px] p-[4px] pt-[8px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]">
+            <span className="pb-1">Submit</span>
             <RiSendPlaneFill className="font-bold" />
           </motion.button>
         </form>
