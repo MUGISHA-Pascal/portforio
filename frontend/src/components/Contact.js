@@ -9,53 +9,56 @@ import loginImage from "../assets/loginPic.png";
 import { FaPhone } from "react-icons/fa6";
 const Contact = () => {
   return (
-    <section className="bg-white flex flex-col justify-center items-center pb-[70px] ">
-      <motion.div className="bg-custom-purple h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
-      <div className="flex flex-row space-x-[20px] items-center mt-[14px] justify-center">
-        <GrContact className="h-[36px] w-[42px] text-custom-purple pt-[5px]" />
-        <span className="text-custom-purple font-bold text-[34px]">
+    <section className="bg-white flex flex-col justify-center items-center pb-[70px]  max-sm:pb-[30px] max-sm:w-full">
+      <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
+      <div className="flex flex-row sm:space-x-[20px] items-center max-sm:space-x-[2px] max-sm:mt-[5px] mt-[14px] justify-center">
+        <GrContact className="h-[36px] w-[42px] max-sm:w-[30px] max-sm:h-[30px] max-sm:pb-[6px] text-custom-purple pt-[5px]" />
+        <span className="text-custom-purple font-bold text-[34px] max-sm:text-[17px]">
           Get in Touch
         </span>
       </div>
-      <div className="flex flex-row bg-[#D9D9D9] rounded-[16px] p-[20px] mt-[30px] items-center justify-center">
-        <form className="h-[400px] w-[500px]  flex flex-col justify-center space-y-[30px] pt-[20px]">
+      <div className="flex flex-row bg-[#D9D9D9] rounded-[16px] max-sm:w-full max-sm:rounded-[7px] p-[20px] mt-[30px] max-sm:mt-[10px] items-center justify-center">
+        <form className="h-[400px] w-[500px] max-sm:h-[300px] max-sm:w-[200px] max-sm:ml-[5px] max-sm:mr-[5px]  flex flex-col justify-center sm:space-y-[30px] max-sm:space-y-[10px] sm:pt-[20px] max-sm:pt-[10px]">
           <div className="relative flex flex-row items-center justify-center">
-            <FaUser className="absolute right-[420px] text-custom-purple" />
+            <FaUser className="absolute right-[420px] max-sm:right-[177px] max-sm:w-[10px] text-custom-purple" />
             <input
               type="text"
-              className="bg-white p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
+              className="bg-white p-2 w-[400px] pl-[40px] max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Name"
             />
           </div>
           <div className="relative flex flex-row items-center justify-center">
-            <MdEmail className="absolute right-[420px] text-custom-purple" />
+            <MdEmail className="absolute right-[420px] max-sm:right-[177px] max-sm:w-[10px] text-custom-purple" />
             <input
               type="text"
-              className="bg-white p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
+              className="bg-white max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Email"
             />
           </div>
           <div className="relative flex flex-row items-center justify-center">
-            <FaPhone className="absolute right-[420px] text-custom-purple" />
+            <FaPhone className="absolute right-[420px] max-sm:right-[177px] max-sm:w-[10px] text-custom-purple" />
             <input
               type="text"
-              className="bg-white p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
+              className="bg-white max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Phone"
             />
           </div>
           <div className="relative flex flex-row items-start justify-center">
-            <AiFillMessage className="absolute right-[420px] top-[12px] text-custom-purple" />
+            <AiFillMessage className="absolute right-[420px] max-sm:right-[177px] max-sm:w-[10px] top-[12px] max-sm:top-[5px] text-custom-purple" />
             <textarea
-              className="bg-white p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] h-[120px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
+              className="bg-white p-2 max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] w-[400px] pl-[40px] text-custom-purple text-[15px] h-[120px] max-sm:h-[70px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Message"
             />
           </div>
-          <motion.button className="bg-custom-purple shadow-custom w-[140px] ml-[50px] text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]">
+          <motion.button className="bg-custom-purple shadow-custom w-[140px] max-sm:w-[100px] max-sm:text-[14px] max-sm: text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]">
             <span className="pb-1">submit</span>
             <RiSendPlaneFill className="font-bold" />
           </motion.button>
         </form>
-        <img src={loginImage} className="w-[300px] h-[300px] " />
+        <img
+          src={loginImage}
+          className="w-[300px] h-[300px] max-sm:w-[120px] max-sm:h-[120px]"
+        />
       </div>
     </section>
   );

@@ -47,31 +47,31 @@ const Skills = () => {
           </p>
           <div className="flex flex-row space-x-[4px] mt-[30px]">
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[5px] pl-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[10px] pl-[3px]">
                 <FaReact className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#00D8FF]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Reactjs
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <SiMui className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#1FA6CA]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   MaterialUI
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <FaBootstrap className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#7E13F8]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Bootstrap
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <DiCss3 className="w-[30px] h-[30px] text-[#0277BD] max-sm:w-[20px] max-sm:h-[20px]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   CSS
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <SiNextdotjs className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#000000]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Nextjs
@@ -79,31 +79,31 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[5px] max-sm:space-x-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[10px] max-sm:space-x-[3px]">
                 <SiRedux className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#764ABC]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Redux
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <RiTailwindCssFill className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#38BDF8]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Tailwindcss
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <FaDocker className="w-[30px] h-[30px] text-[#2396ED] max-sm:w-[20px] max-sm:h-[20px]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Docker
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <FaHtml5 className="w-[30px] h-[30px] text-[#E14E1D] max-sm:w-[20px] max-sm:h-[20px]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   HTML
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={figmaIcon}
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
@@ -122,40 +122,40 @@ const Skills = () => {
           </p>
           <div className="flex flex-row space-x-[4px] mt-[30px]">
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[5px] pl-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[10px] pl-[3px]">
                 <FaNodeJs className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#539E43]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Nodejs
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <SiExpress className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#000000]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Expressjs
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <BiLogoSpringBoot className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#77BC1F]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Spring boot
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={firebasIcon}
-                  className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
+                  className="w-[25px] h-[30px] max-sm:w-[15px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Firebase
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <FaLaravel className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#FF2D20]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Laravel
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <GrMysql className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#00618A]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Mysql
@@ -163,13 +163,13 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[5px] max-sm:space-x-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[10px] max-sm:space-x-[3px]">
                 <GrGraphQl className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#E535AB]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Graphql
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={awsIcon}
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#38BDF8]"
@@ -178,19 +178,19 @@ const Skills = () => {
                   AWS
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <SiDjango className="w-[30px] h-[30px] text-[#092E20] max-sm:w-[20px] max-sm:h-[20px]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Django
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <SiFlask className="w-[30px] h-[30px] text-[#000000] max-sm:w-[20px] max-sm:h-[20px]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Flask
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={postgresIcon}
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
@@ -199,10 +199,10 @@ const Skills = () => {
                   Figma
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] max-sm:w-[70px] max-sm:h-[30px] h-[40px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={mongodbIcon}
-                  className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
+                  className="w-[20px] h-[30px] max-sm:w-[10px] max-sm:h-[20px]"
                 />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   MongoDB
@@ -218,7 +218,7 @@ const Skills = () => {
           </p>
           <div className="flex flex-row space-x-[4px] mt-[30px]">
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[5px] pl-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[10px] pl-[3px]">
                 <FaReact className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#00D8FF]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   React native
@@ -226,7 +226,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[5px] max-sm:space-x-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[10px] max-sm:space-x-[3px]">
                 <img
                   src={flutterIcon}
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
@@ -245,13 +245,13 @@ const Skills = () => {
           </p>
           <div className="flex flex-row space-x-[4px] mt-[30px]">
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[5px] pl-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center space-x-[10px] pl-[3px]">
                 <SiPytorch className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] text-[#EE4C2C]" />
                 <p className="font-bold text-custom-purple text-[14px] max-sm:text-[7px]">
                   Pytorch
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={opencvIcon}
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] "
@@ -262,7 +262,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col space-y-[4px]">
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[5px] max-sm:space-x-[3px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] rounded-[4px] max-sm:w-[70px] max-sm:h-[30px]  flex flex-row items-center pl-[3px] space-x-[10px] max-sm:space-x-[3px]">
                 <img
                   src={pandasIcon}
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
@@ -271,7 +271,7 @@ const Skills = () => {
                   Pandas
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[5px]">
+              <div className="bg-[#D9D9D9] w-[125px] h-[40px] max-sm:w-[70px] max-sm:h-[30px] rounded-[4px] flex flex-row items-center pl-[3px] space-x-[10px]">
                 <img
                   src={tensolFlowIcon}
                   className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px]"
