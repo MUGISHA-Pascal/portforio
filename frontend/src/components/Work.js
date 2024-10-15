@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { IoMdEye } from "react-icons/io";
 import { FaCode } from "react-icons/fa6";
 
-const Work = () => {
+const Work = ({ id }) => {
   const [projectIndex, setProjectIndex] = useState(true);
   const projects = [
     {
@@ -33,7 +33,10 @@ const Work = () => {
     },
   ];
   return (
-    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[300px] w-full max-sm:pb-[30px] max-sm:w-full">
+    <section
+      id={id}
+      className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[300px] w-full max-sm:pb-[30px] max-sm:w-full"
+    >
       <motion.div className="bg-custom-purple max-sm:h-[3px] max-sm:w-[180px] h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
       <div className="flex flex-row sm:space-x-[20px] max-sm:space-x-0 items-center max-sm:mt-[5px] mt-[14px] justify-center">
         <BsCollectionFill className="h-[36px] max-sm:h-[30px] max-sm:pb-[6px] w-[42px] text-custom-purple pt-[5px]" />

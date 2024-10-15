@@ -3,9 +3,12 @@ import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
 import userIcon from "../assets/userIcon.png";
 
-const About = () => {
+const About = ({ id }) => {
   return (
-    <section className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] max-sm:pb-[50px] w-full">
+    <section
+      id={id}
+      className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] max-sm:pb-[50px] w-full"
+    >
       <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[130px] shadow-custom rounded-br-md rounded-bl-md w-[300px]"></motion.div>
       <div className="flex flex-row space-x-2 items-center mt-[14px] max-sm:mt-[7px]">
         <img

@@ -7,19 +7,21 @@ import Work from "./components/Work";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import { BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
     <div className="App overflow-x-hidden">
       <div className="font-inter relative flex flex-col items-center justify-center">
-        <Home />
-        <About />
-        <Skills />
-        <Experience />
-        <Education />
-        <Work />
-        <Contact />
-        <Footer />
+        <Router>
+          <Home id="home" />
+          <About id="about" />
+          <Skills id="skills" />
+          <Experience id="experience" />
+          <Education id="education" />
+          <Work id="projects" />
+          <Contact id="contact" />
+          <Footer />
+        </Router>
       </div>
     </div>
   );

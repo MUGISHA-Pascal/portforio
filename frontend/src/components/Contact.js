@@ -7,9 +7,12 @@ import { AiFillMessage } from "react-icons/ai";
 import { RiSendPlaneFill } from "react-icons/ri";
 import loginImage from "../assets/loginPic.png";
 import { FaPhone } from "react-icons/fa6";
-const Contact = () => {
+const Contact = ({ id }) => {
   return (
-    <section className="bg-[#FFFFFF] w-full flex flex-col justify-center items-center pb-[70px]  max-sm:pb-[30px] max-sm:w-full">
+    <section
+      id={id}
+      className="bg-[#FFFFFF] w-full flex flex-col justify-center items-center pb-[70px]  max-sm:pb-[30px] max-sm:w-full"
+    >
       <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
       <div className="flex flex-row sm:space-x-[20px] items-center max-sm:space-x-[2px] max-sm:mt-[5px] mt-[14px] justify-center">
         <GrContact className="h-[36px] w-[42px] max-sm:w-[30px] max-sm:h-[30px] max-sm:pb-[6px] text-custom-purple pt-[5px]" />

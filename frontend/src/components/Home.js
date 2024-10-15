@@ -4,8 +4,9 @@ import profileImg from "../assets/pascalProfile.jpg";
 import { FaCode } from "react-icons/fa6";
 import ParticleBackground from "./ParticleBackground";
 import { TiThMenu } from "react-icons/ti";
+import { Link } from "react-scroll";
 
-const Home = () => {
+const Home = ({ id }) => {
   const [navExist, setNavExist] = useState(true);
   const navVariants = {
     hover: {
@@ -69,55 +70,90 @@ const Home = () => {
                   id="displayDiv"
                   className="hidden text-[10px] flex-col rounded-[5px] space-y-[10px] items-center justify-center h-[200px] w-[100px] right-0 absolute bg-custom-purple text-white"
                 >
-                  <motion.a
+                  <Link
                     variants={navVariants2}
                     whileHover="hover2"
+                    smooth={true}
+                    duration={500}
+                    to="home"
                     initial="hidden2"
+                    spy={true}
+                    offset={50}
                   >
                     Home
-                  </motion.a>
-                  <motion.a
+                  </Link>
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={50}
+                    to="about"
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
                   >
                     About
-                  </motion.a>
-                  <motion.a
+                  </Link>
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={50}
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
+                    to="skills"
                   >
                     Skills
-                  </motion.a>
-                  <motion.a
+                  </Link>
+                  <Link
+                    smooth={true}
+                    spy={true}
+                    offset={50}
+                    duration={500}
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
+                    to="experience"
                   >
                     Experience
-                  </motion.a>
-                  <motion.a
+                  </Link>
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={50}
+                    to="education"
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
                   >
                     Education
-                  </motion.a>
-                  <motion.a
+                  </Link>
+                  <Link
+                    smooth={true}
+                    spy={true}
+                    offset={50}
+                    duration={500}
+                    to="projects"
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
                   >
                     Projects
-                  </motion.a>
-                  <motion.a
+                  </Link>
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={50}
+                    to="contact"
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
                   >
                     Contact
-                  </motion.a>
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -141,60 +177,70 @@ const Home = () => {
           >
             <FaCode className="font-bold text-white text-2xl" />
             <div className="flex space-x-8">
-              <motion.a
+              <Link
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                to="home"
               >
                 Home
-              </motion.a>
-              <motion.a
+              </Link>
+              <Link
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                to="about"
               >
                 About
-              </motion.a>
-              <motion.a
+              </Link>
+              <Link
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                to="skills"
               >
                 Skills
-              </motion.a>
-              <motion.a
+              </Link>
+              <Link
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                to="experience"
               >
                 Experience
-              </motion.a>
-              <motion.a
+              </Link>
+              <Link
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                to="education"
               >
                 Education
-              </motion.a>
-              <motion.a
+              </Link>
+              <Link
                 variants={navVariants}
                 whileHover="hover"
+                to="projects"
                 initial="hidden"
               >
                 Projects
-              </motion.a>
-              <motion.a
+              </Link>
+              <Link
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                to="contact"
               >
                 Contact
-              </motion.a>
+              </Link>
             </div>
           </motion.nav>
         )}
       </header>
-      <section className="flex relative sm:ml-[270px] flex-row pt-[100px] w-full items-center mb-[120px] max-sm:mb-[70px] max-sm:pt-[50px]">
+      <section
+        id={id}
+        className="flex relative sm:ml-[270px] flex-row pt-[100px] w-full items-center mb-[120px] max-sm:mb-[70px] max-sm:pt-[50px]"
+      >
         <ParticleBackground />
         <img
           src={profileImg}

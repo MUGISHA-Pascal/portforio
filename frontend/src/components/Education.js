@@ -2,9 +2,12 @@ import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { IoMdArrowDropleft } from "react-icons/io";
-const Education = () => {
+const Education = ({ id }) => {
   return (
-    <section className="bg-[#FFFFFF] flex flex-col justify-center w-full items-center pb-[70px] max-sm:pb-[30px] max-sm:w-full">
+    <section
+      id={id}
+      className="bg-[#FFFFFF] flex flex-col justify-center w-full items-center pb-[70px] max-sm:pb-[30px] max-sm:w-full"
+    >
       <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
       <div className="flex flex-row sm:space-x-[20px] max-sm:space-x-[5px] items-center mt-[14px] max-sm:mt-[5px] justify-center">
         <FaGraduationCap className="h-[36px] w-[42px] max-sm:w-[30px] max-sm:h-[30px] max-sm:pb-[6px] text-custom-purple pt-[5px]" />

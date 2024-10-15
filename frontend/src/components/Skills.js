@@ -29,9 +29,12 @@ import pandasIcon from "../assets/pandas.png";
 import tensolFlowIcon from "../assets/tensolflow.png";
 import opencvIcon from "../assets/opencv.png";
 
-const Skills = () => {
+const Skills = ({ id }) => {
   return (
-    <section className="bg-white flex flex-col justify-center items-center pb-[70px] max-sm:pb-[30px] w-full">
+    <section
+      id={id}
+      className="bg-white flex flex-col justify-center items-center pb-[70px] max-sm:pb-[30px] w-full"
+    >
       <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
       <div className="flex flex-row space-x-[20px] items-center mt-[14px] max-sm:mt-[5px] max-sm:space-x-[7px] justify-center ">
         <FaLaptopCode className="h-[36px] w-[42px] text-custom-purple pt-[5px] max-sm:w-[30px] max-sm:h-[30px] max-sm:pb-[6px]" />
