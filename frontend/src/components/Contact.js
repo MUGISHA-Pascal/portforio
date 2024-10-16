@@ -22,8 +22,8 @@ const Contact = ({ id }) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        body: JSON.stringify({ email, message: coll_message }),
       },
+      body: JSON.stringify({ email, message: coll_message }),
     });
     setName("");
     setEmail("");
