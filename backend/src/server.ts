@@ -1,8 +1,8 @@
-const express = require("express");
-require("dotenv").config();
-const nodemailer = require("nodemailer");
-const cors = require("cors");
-const { text } = require("body-parser");
+import dotenv from "dotenv";
+import express, { Request, Response } from "express";
+import nodemailer from "nodemailer";
+import cors from "cors";
+dotenv.config();
 const server = express();
 server.use(cors());
 server.use(express.json());

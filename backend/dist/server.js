@@ -1,15 +1,21 @@
 "use strict";
-const express = require("express");
-require("dotenv").config();
-const nodemailer = require("nodemailer");
-const cors = require("cors");
-const { text } = require("body-parser");
-const server = express();
-server.use(cors());
-server.use(express.json());
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+// const express = require("express");
+// require("dotenv").config();
+// const nodemailer = require("nodemailer");
+// const cors = require("cors");
+const express_1 = __importDefault(require("express"));
+const nodemailer_1 = __importDefault(require("nodemailer"));
+const cors_1 = __importDefault(require("cors"));
+const server = (0, express_1.default)();
+server.use((0, cors_1.default)());
+server.use(express_1.default.json());
 server.post("/api/message", (req, res) => {
     const data = req.body;
-    const transporter = nodemailer.createTransport({
+    const transporter = nodemailer_1.default.createTransport({
         service: "gmail",
         auth: {
             user: "mugishapascal2008@gmail.com",
