@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const { text } = require("body-parser");
@@ -28,6 +29,7 @@ server.post("/api/message", (req, res) => {
     }
   });
 });
-server.listen(4000, () => {
+const port = process.env.PORT;
+server.listen(port, () => {
   console.log("the server is running");
 });
