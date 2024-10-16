@@ -28,6 +28,7 @@ server.post("/api/message", (req, res) => {
         }
         else {
             console.log("message sent is" + info.response);
+            res.send("message sent");
         }
     });
 });
