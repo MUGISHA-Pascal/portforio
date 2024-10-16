@@ -8,6 +8,7 @@ server.use(cors());
 server.use(express.json());
 server.post("/api/message", (req: Request, res: Response) => {
   const data: any = req.body;
+  console.log(data);
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {

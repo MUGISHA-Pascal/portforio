@@ -11,7 +11,25 @@ const Contact = ({ id }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState(null);
-  const handleSubmit = () => {};
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const coll_message =
+      message + ", phone number " + phone + " and name is " + name;
+    console.log(coll_message);
+    fetch("https://portforio.onrender.com/api/message", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        body: { email, message: coll_message },
+      },
+    });
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  };
   return (
     <section
       id={id}
@@ -70,6 +88,10 @@ const Contact = ({ id }) => {
             <textarea
               className="bg-white p-2 max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] w-[400px] pl-[40px] text-custom-purple text-[15px] h-[120px] max-sm:h-[70px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Message"
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
             />
           </div>
           <motion.button
