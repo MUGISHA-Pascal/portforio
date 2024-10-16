@@ -28,7 +28,7 @@ server.post("/api/message", (req: Request, res: Response) => {
         console.log(`the error is ${error}`);
       } else {
         console.log("message sent is" + info.response);
-        res.send("message sent");
+        res.json({ message: "message sent" });
       }
     }
   );
