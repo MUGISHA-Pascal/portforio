@@ -6,8 +6,8 @@ const { text } = require("body-parser");
 const server = express();
 server.use(cors());
 server.use(express.json());
-server.post("/api/message", (req, res) => {
-  const { email, message } = req.body;
+server.post("/api/message", (req: Request, res: Response) => {
+  const data: any = req.body;
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -16,20 +16,23 @@ server.post("/api/message", (req, res) => {
     },
   });
   const emailoptions = {
-    from: email,
+    from: data.email,
     to: "mugishapascal2008@gmail.com",
     subject: "message from the portforio",
-    text: message,
+    text: data.message,
   };
-  transporter.sendMail(emailoptions, function (error, info) {
-    if (error) {
-      console.log(`the error is ${error}`);
-    } else {
-      console.log("message sent is".info.response);
+  transporter.sendMail(
+    emailoptions,
+    function (error: any, info: { response: any }) {
+      if (error) {
+        console.log(`the error is ${error}`);
+      } else {
+        console.log("message sent is" + info.response);
+      }
     }
-  });
+  );
 });
 const port = process.env.PORT;
 server.listen(port, () => {
-  console.log("the server is running");
+  console.log("the server is running " + port);
 });
