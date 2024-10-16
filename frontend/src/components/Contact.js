@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GrContact } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { FaUser } from "react-icons/fa";
@@ -8,6 +8,10 @@ import { RiSendPlaneFill } from "react-icons/ri";
 import loginImage from "../assets/loginPic.png";
 import { FaPhone } from "react-icons/fa6";
 const Contact = ({ id }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState(null);
+  const handleSubmit = () => {};
   return (
     <section
       id={id}
@@ -21,11 +25,18 @@ const Contact = ({ id }) => {
         </span>
       </div>
       <div className="flex flex-row bg-[#D9D9D9] rounded-[16px] max-sm:w-full max-sm:rounded-[7px] p-[20px] mt-[30px] max-sm:mt-[10px] items-center justify-center">
-        <form className="h-[400px] w-[500px] max-sm:h-[300px] max-sm:w-[200px] max-sm:ml-[5px] max-sm:mr-[5px]  flex flex-col justify-center sm:space-y-[30px] max-sm:space-y-[10px] sm:pt-[20px] max-sm:pt-[10px]">
+        <form
+          onSubmit={handleSubmit}
+          className="h-[400px] w-[500px] max-sm:h-[300px] max-sm:w-[200px] max-sm:ml-[5px] max-sm:mr-[5px]  flex flex-col justify-center sm:space-y-[30px] max-sm:space-y-[10px] sm:pt-[20px] max-sm:pt-[10px]"
+        >
           <div className="relative flex flex-row items-center justify-center">
             <FaUser className="absolute right-[420px] max-sm:right-[177px] max-sm:w-[10px] text-custom-purple" />
             <input
               type="text"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
               className="bg-white p-2 w-[400px] pl-[40px] max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Name"
             />
@@ -34,6 +45,10 @@ const Contact = ({ id }) => {
             <MdEmail className="absolute right-[420px] max-sm:right-[177px] max-sm:w-[10px] text-custom-purple" />
             <input
               type="text"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
               className="bg-white max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Email"
             />
@@ -41,6 +56,10 @@ const Contact = ({ id }) => {
           <div className="relative flex flex-row items-center justify-center">
             <FaPhone className="absolute right-[420px] max-sm:right-[177px] max-sm:w-[10px] text-custom-purple" />
             <input
+              value={phone}
+              onChange={(e) => {
+                setPhone(e.target.value);
+              }}
               type="text"
               className="bg-white max-sm:pl-[30px] max-sm:text-[7.5px] max-sm:placeholder:text-[7.5px] p-2 w-[400px] pl-[40px] text-custom-purple text-[15px] placeholder:text-custom-purple placeholder:text-[15px] focus:outline-none"
               placeholder="Phone"
@@ -53,7 +72,10 @@ const Contact = ({ id }) => {
               placeholder="Message"
             />
           </div>
-          <motion.button className="bg-custom-purple shadow-custom w-[120px] max-sm:w-[100px] ml-[52px] max-sm:text-[14px] max-sm: text-white font-bold text-[17px] p-[4px] pt-[8px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]">
+          <motion.button
+            type="submit"
+            className="bg-custom-purple shadow-custom w-[120px] max-sm:w-[100px] ml-[52px] max-sm:text-[14px] max-sm: text-white font-bold text-[17px] p-[4px] pt-[8px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]"
+          >
             <span className="pb-1">Submit</span>
             <RiSendPlaneFill className="font-bold" />
           </motion.button>

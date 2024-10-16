@@ -10,8 +10,8 @@ server.post("/api/message", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      email: "mugishapascal2008@gmail.com",
-      pass: "mama2008@",
+      user: "mugishapascal2008@gmail.com",
+      pass: "xaqz sncc fvva eyon",
     },
   });
   const emailoptions = {
