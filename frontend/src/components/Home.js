@@ -75,17 +75,19 @@ const Home = ({ id }) => {
                     whileHover="hover2"
                     smooth={true}
                     duration={500}
+                    className="hover:cursor-pointer"
                     to="home"
                     initial="hidden2"
                     spy={true}
                     offset={50}
                   >
-                    Home
+                    <p>Home</p>
                   </Link>
                   <Link
                     smooth={true}
                     duration={500}
                     spy={true}
+                    className="hover:cursor-pointer"
                     offset={50}
                     to="about"
                     variants={navVariants2}
@@ -96,6 +98,7 @@ const Home = ({ id }) => {
                   </Link>
                   <Link
                     smooth={true}
+                    className="hover:cursor-pointer"
                     duration={500}
                     spy={true}
                     offset={50}
@@ -108,6 +111,7 @@ const Home = ({ id }) => {
                   </Link>
                   <Link
                     smooth={true}
+                    className="hover:cursor-pointer"
                     spy={true}
                     offset={50}
                     duration={500}
@@ -121,6 +125,7 @@ const Home = ({ id }) => {
                   <Link
                     smooth={true}
                     duration={500}
+                    className="hover:cursor-pointer"
                     spy={true}
                     offset={50}
                     to="education"
@@ -134,6 +139,7 @@ const Home = ({ id }) => {
                     smooth={true}
                     spy={true}
                     offset={50}
+                    className="hover:cursor-pointer"
                     duration={500}
                     to="projects"
                     variants={navVariants2}
@@ -146,6 +152,7 @@ const Home = ({ id }) => {
                     smooth={true}
                     duration={500}
                     spy={true}
+                    className="hover:cursor-pointer"
                     offset={50}
                     to="contact"
                     variants={navVariants2}
@@ -180,6 +187,7 @@ const Home = ({ id }) => {
               <Link
                 variants={navVariants}
                 whileHover="hover"
+                className="hover:cursor-pointer"
                 initial="hidden"
                 to="home"
               >
@@ -188,6 +196,7 @@ const Home = ({ id }) => {
               <Link
                 variants={navVariants}
                 whileHover="hover"
+                className="hover:cursor-pointer"
                 initial="hidden"
                 to="about"
               >
@@ -196,6 +205,7 @@ const Home = ({ id }) => {
               <Link
                 variants={navVariants}
                 whileHover="hover"
+                className="hover:cursor-pointer"
                 initial="hidden"
                 to="skills"
               >
@@ -205,6 +215,7 @@ const Home = ({ id }) => {
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                className="hover:cursor-pointer"
                 to="experience"
               >
                 Experience
@@ -213,6 +224,7 @@ const Home = ({ id }) => {
                 variants={navVariants}
                 whileHover="hover"
                 initial="hidden"
+                className="hover:cursor-pointer"
                 to="education"
               >
                 Education
@@ -220,6 +232,7 @@ const Home = ({ id }) => {
               <Link
                 variants={navVariants}
                 whileHover="hover"
+                className="hover:cursor-pointer"
                 to="projects"
                 initial="hidden"
               >
@@ -228,6 +241,7 @@ const Home = ({ id }) => {
               <Link
                 variants={navVariants}
                 whileHover="hover"
+                className="hover:cursor-pointer"
                 initial="hidden"
                 to="contact"
               >

@@ -4,6 +4,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io";
+import { Link } from "react-scroll";
 import { FaHeart } from "react-icons/fa6";
 const Footer = () => {
   return (
@@ -28,30 +29,53 @@ const Footer = () => {
           <div className="flex flex-row justify-center space-x-[30px] max-sm:space-x-[15px]">
             <div className="h-[148px] w-[5px] max-sm:h-[120px] max-sm:w-[3px] rounded-full bg-white"></div>
             <div className="w-[300px] text-[10px] text-left max-sm:text-[7px] space-y-[7px] mt-[10px] flex flex-col">
-              <a href="" className="flex flex-row items-center space-x-[2px]">
+              <Link
+                to="home"
+                className="flex flex-row items-center space-x-[2px] hover:cursor-pointer"
+              >
+                {" "}
                 <IoIosArrowForward className="font-bold" />
                 <p>Home</p>
-              </a>
-              <a href="" className="flex flex-row items-center space-x-[2px]">
+              </Link>
+              <Link
+                to="about"
+                className="flex flex-row items-center space-x-[2px] hover:cursor-pointer"
+              >
+                {" "}
                 <IoIosArrowForward className="font-bold" />
                 <p>About</p>
-              </a>
-              <a href="" className="flex flex-row items-center space-x-[2px]">
+              </Link>
+              <Link
+                to="skills"
+                className="flex flex-row items-center space-x-[2px] hover:cursor-pointer"
+              >
+                {" "}
                 <IoIosArrowForward className="font-bold" />
                 <p>Skills</p>
-              </a>
-              <a href="" className="flex flex-row items-center space-x-[2px]">
+              </Link>
+              <Link
+                to="experience"
+                className="flex flex-row items-center space-x-[2px] hover:cursor-pointer"
+              >
+                {" "}
                 <IoIosArrowForward className="font-bold" />
                 <p>Experience</p>
-              </a>
-              <a href="" className="flex flex-row items-center space-x-[2px]">
+              </Link>
+              <Link
+                to="education"
+                className="flex flex-row items-center space-x-[2px] hover:cursor-pointer"
+              >
+                {" "}
                 <IoIosArrowForward className="font-bold" />
                 <p>Education</p>
-              </a>
-              <a href="" className="flex flex-row items-center space-x-[2px]">
+              </Link>
+              <Link
+                to="contact"
+                className="flex flex-row items-center space-x-[2px] hover:cursor-pointer"
+              >
                 <IoIosArrowForward className="font-bold" />
                 <p>Contact</p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
