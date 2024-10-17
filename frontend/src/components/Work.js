@@ -203,7 +203,10 @@ const Work = ({ id }) => {
             key={index}
             className="w-full mr-[5px] ml-[5px] rounded-[5px] bg-white flex flex-row h-[100px] space-x-[10px] p-[5px]"
           >
-            <div className="bg-[#808080] w-[200px] h-[90px] rounded-[5px]"></div>
+            <div
+              className=" w-[200px] h-[90px] rounded-[5px] object-cover bg-cover "
+              style={{ backgroundImage: `url(${project.image})` }}
+            ></div>
             <div>
               <p className="text-custom-purple font-bold text-[20px] mt-[14px] max-sm:text-[10px]">
                 {project.name}
