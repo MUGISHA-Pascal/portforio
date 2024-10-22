@@ -24,9 +24,17 @@ import WorkTrack from "../assets/WorkTrack.png";
 import Xform from "../assets/Xform.jpeg";
 import ML from "../assets/ML.png";
 import Librax from "../assets/Librax.png";
+import userhub from "../assets/userhub.png";
 const Work = ({ id }) => {
   const [projectIndex, setProjectIndex] = useState(true);
   const projects = [
+    {
+      name: "UserHub",
+      description: "a web based application to control users",
+      ViewLink: "https://userhub-one.vercel.app/",
+      codeLink: "https://github.com/MUGISHA-Pascal/UserHub",
+      image: userhub,
+    },
     {
       name: "TaskTrack",
       description: "web based app to keep track of tasks",
