@@ -7,23 +7,23 @@ const About = ({ id }) => {
   return (
     <section
       id={id}
-      className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] max-sm:pb-[50px] w-full"
+      className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] max-md:pb-[50px] w-full"
     >
-      <motion.div className="bg-custom-purple h-[5px] max-sm:h-[3px] max-sm:w-[130px] shadow-custom rounded-br-md rounded-bl-md w-[300px]"></motion.div>
-      <div className="flex flex-row space-x-2 items-center mt-[14px] max-sm:mt-[7px]">
+      <motion.div className="bg-custom-purple h-[5px] max-md:h-[3px] max-md:w-[130px] shadow-custom rounded-br-md rounded-bl-md w-[300px]"></motion.div>
+      <div className="flex flex-row space-x-2 items-center mt-[14px] max-md:mt-[7px]">
         <img
           src={userIcon}
           alt="user icon"
-          className="h-[34px] w-[40px] max-sm:w-[19px] max-sm:h-[17px]"
+          className="h-[34px] w-[40px] max-md:w-[19px] max-md:h-[17px]"
         />
-        <span className="text-custom-purple font-bold text-[34px] max-sm:text-[17px]">
+        <span className="text-custom-purple font-bold text-[34px] max-md:text-[17px]">
           About me
         </span>
       </div>
-      <div className="flex flex-row space-x-[40px] max-sm:space-x-[20px] mt-[70px] max-sm:mt-[20px] justify-center items-center">
-        <div className="bg-custom-purple h-[200px] rounded-full w-[5px] max-sm:h-[260px] max-sm:w-[3px]"></div>
-        <div className="flex flex-col space-y-[55px] max-sm:space-y-[30px] mb-[10px]">
-          <p className="w-[1001px] leading-6 text-left text-[15px] max-sm:text-[10px] max-sm:leading-4 max-sm:w-[200px]">
+      <div className="flex flex-row space-x-[40px] max-md:space-x-[20px] mt-[70px] max-md:mt-[20px] justify-center items-center">
+        <div className="bg-custom-purple h-[200px] rounded-full w-[5px] max-md:h-[260px] max-md:w-[3px]"></div>
+        <div className="flex flex-col space-y-[55px] max-md:space-y-[30px] mb-[10px]">
+          <p className="w-[1001px] leading-6 text-left text-[15px] max-md:text-[10px] max-md:leading-4 max-md:w-[200px]">
             I’m
             <span className="text-custom-purple font-bold">
               {" "}
@@ -39,7 +39,7 @@ const About = ({ id }) => {
           </p>
           <motion.a
             href="/resume.pdf"
-            className="bg-custom-purple shadow-custom w-[140px] max-sm:w-[100px] max-sm:text-[14px] max-sm: text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]"
+            className="bg-custom-purple shadow-custom w-[140px] max-md:w-[100px] max-md:text-[14px] max-md: text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]"
           >
             <span className="pb-1">resume</span>
             <IoIosArrowForward className="font-bold" />

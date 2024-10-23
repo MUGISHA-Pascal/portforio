@@ -195,17 +195,17 @@ const Work = ({ id }) => {
   return (
     <section
       id={id}
-      className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[70px] w-full max-sm:pb-[30px] max-sm:w-full"
+      className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[70px] w-full max-md:pb-[30px] max-md:w-full"
     >
-      <motion.div className="bg-custom-purple max-sm:h-[3px] max-sm:w-[180px] h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
-      <div className="flex flex-row sm:space-x-[20px] max-sm:space-x-0 items-center max-sm:mt-[5px] mt-[14px] justify-center">
-        <BsCollectionFill className="h-[36px] max-sm:h-[30px] max-sm:pb-[6px] w-[42px] text-custom-purple pt-[5px]" />
-        <span className="text-custom-purple font-bold text-[34px] max-sm:text-[17px]">
+      <motion.div className="bg-custom-purple max-md:h-[3px] max-md:w-[180px] h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
+      <div className="flex flex-row sm:space-x-[20px] max-md:space-x-0 items-center max-md:mt-[5px] mt-[14px] justify-center">
+        <BsCollectionFill className="h-[36px] max-md:h-[30px] max-md:pb-[6px] w-[42px] text-custom-purple pt-[5px]" />
+        <span className="text-custom-purple font-bold text-[34px] max-md:text-[17px]">
           Projects
         </span>
       </div>
       {/* small screen */}
-      <div className="max-sm:flex hidden max-sm:flex-col max-sm:space-y-[5px] max-sm:w-full">
+      <div className="max-md:flex hidden max-md:flex-col max-md:space-y-[5px] max-md:w-full">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -216,7 +216,7 @@ const Work = ({ id }) => {
               style={{ backgroundImage: `url(${project.image})` }}
             ></div>
             <div>
-              <p className="text-custom-purple font-bold text-[20px] mt-[14px] max-sm:text-[10px]">
+              <p className="text-custom-purple font-bold text-[20px] mt-[14px] max-md:text-[10px]">
                 {project.name}
               </p>
               <p className="text-[#808080] text-[7px]">{project.description}</p>
@@ -236,7 +236,7 @@ const Work = ({ id }) => {
         ))}
       </div>
       {/* big screen */}
-      <div className="grid grid-cols-3 gap-[20px] p-2 mt-[50px] max-sm:hidden">
+      <div className="grid grid-cols-3 gap-[20px] p-2 mt-[50px] max-md:hidden">
         {projects.map((project, index) => (
           <div key={index} className="relative">
             <div className="w-[320px] h-[320px] bg-white rounded-[17px] flex flex-col justify-between">

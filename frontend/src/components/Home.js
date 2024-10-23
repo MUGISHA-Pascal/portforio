@@ -40,11 +40,11 @@ const Home = ({ id }) => {
 
   return (
     <div className="w-full">
-      <header className="flex justify-center max-sm:w-full max-sm:mx-0">
+      <header className="flex justify-center max-md:w-full max-md:mx-0">
         {navExist ? (
           <>
             <motion.div
-              className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md max-sm:hidden rounded-bl-md w-1/2 z-50"
+              className="bg-custom-purple fixed h-2 shadow-custom rounded-br-md max-md:hidden rounded-bl-md w-1/2 z-50"
               whileHover={{
                 scale: 1,
               }}
@@ -59,7 +59,7 @@ const Home = ({ id }) => {
                 delay: 0.1,
               }}
             ></motion.div>
-            <motion.div className="  hidden max-sm:flex max-sm:flex-row max-sm:w-full max-sm:justify-between">
+            <motion.div className="  hidden max-md:flex max-md:flex-row max-md:w-full max-md:justify-between">
               <FaCode className="font-bold text-custom-purple mx-[20px] my-[10px] w-[30px] h-[30px]" />
               <div>
                 <TiThMenu
@@ -253,18 +253,18 @@ const Home = ({ id }) => {
       </header>
       <section
         id={id}
-        className="flex relative sm:ml-[270px] flex-row pt-[100px] w-full items-center mb-[120px] max-sm:mb-[70px] max-sm:pt-[50px]"
+        className="flex relative md:ml-[270px] flex-row pt-[100px] w-full items-center mb-[120px] max-md:mb-[70px] max-md:pt-[50px]"
       >
         <ParticleBackground />
         <img
           src={profileImg}
           alt="profile picture"
-          className="w-[200px] h-[200px] rounded-full object-cover max-sm:ml-[30px] max-sm:w-[130px] max-sm:h-[130px]"
+          className="w-[200px] h-[200px] rounded-full object-cover max-md:ml-[30px] max-md:w-[130px] max-md:h-[130px]"
         />
-        <div className="flex flex-row max-sm:ml-[20px]  ml-[100px] items-center justify-center">
-          <div className="bg-custom-purple h-[150px] max-sm:h-[100px] max-sm:w-[8px] rounded-full w-[5px]"></div>
-          <div className="pl-[30px] pt-[17px] max-sm:pl-[10px]">
-            <h1 className="font-bold text-[40px] text-left max-sm:text-[17px]">
+        <div className="flex flex-row max-md:ml-[20px]  ml-[100px] items-center justify-center">
+          <div className="bg-custom-purple h-[150px] max-md:h-[100px] max-md:w-[8px] rounded-full w-[5px]"></div>
+          <div className="pl-[30px] pt-[17px] max-md:pl-[10px]">
+            <h1 className="font-bold text-[40px] text-left max-md:text-[17px]">
               MUGISHA <span className="text-custom-purple">Pascal</span>
             </h1>
             <img
