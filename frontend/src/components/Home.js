@@ -68,7 +68,7 @@ const Home = ({ id }) => {
                 />
                 <div
                   id="displayDiv"
-                  className="hidden text-[10px] flex-col rounded-[5px] space-y-[10px] items-center justify-center h-[200px] w-[100px] right-0 absolute bg-custom-purple text-white"
+                  className="hidden text-[10px] flex-col rounded-[10px] space-y-[10px] items-center justify-center z-10 h-[200px] w-[170px] right-[7px] absolute bg-custom-purple text-white"
                 >
                   <Link
                     variants={navVariants2}

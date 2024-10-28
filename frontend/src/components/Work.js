@@ -25,9 +25,17 @@ import Xform from "../assets/Xform.jpeg";
 import ML from "../assets/ML.png";
 import Librax from "../assets/Librax.png";
 import userhub from "../assets/userhub.png";
+import farm from "../assets/farm.png";
 const Work = ({ id }) => {
   const [projectIndex, setProjectIndex] = useState(true);
   const projects = [
+    {
+      name: "Farm2Global",
+      description: "a web based app to support agriculture",
+      ViewLink: "https://farm2-global-frontend.vercel.app/",
+      codeLink: "https://github.com/MUGISHA-Pascal/Farm2Global",
+      image: farm,
+    },
     {
       name: "UserHub",
       description: "a web based application to control users",
