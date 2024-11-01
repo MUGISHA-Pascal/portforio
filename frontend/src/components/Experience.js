@@ -26,10 +26,10 @@ const Experience = ({ id }) => {
             <IoMdArrowDropleft className="text-custom-purple w-[30px] max-md:w-[15px] max-md:h-[15px] h-[30px] absolute right-[488px] max-md:right-[164px] " />
             <motion.div className="h-[80px] rounded-[5px] w-[500px] max-md:w-[170px] max-md:h-[40px] bg-custom-purple text-left pl-[20px] max-md:pl-[10px] max-md:pt-[3.5px] pt-[7px] pb-[3px] max-md:pb-[1.5px]">
               <p className="font-bold text-[17px] text-white max-md:text-[8.5px]">
-                CodeAlpha
+                Farm2Global
               </p>
               <p className="font-bold text-[13px] max-md:text-[6.5px] text-white">
-                Machine learning developer | Part time intern
+                Full stack developer | full time job
               </p>
               <p className="text-[12px] max-md:text-[6px] text-white font-thin">
                 Oct 2024 - Present
