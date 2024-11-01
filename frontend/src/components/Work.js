@@ -25,6 +25,7 @@ import Xform from "../assets/Xform.jpeg";
 import ML from "../assets/ML.png";
 import Librax from "../assets/Librax.png";
 import userhub from "../assets/userhub.png";
+import agrigrowth from "../assets/agrigrowth.png";
 import farm from "../assets/farm.png";
 const Work = ({ id }) => {
   const [projectIndex, setProjectIndex] = useState(true);
@@ -110,6 +111,14 @@ const Work = ({ id }) => {
       ViewLink: "https://claimstream.vercel.app",
       codeLink: "https://github.com/MUGISHA-Pascal/Claimstream",
       image: ClaimStream,
+    },
+    {
+      name: "AgriGrowth",
+      description:
+        "a web based application that deals with insurance claim functionalities",
+      ViewLink: "https://agri-growth.vercel.app/",
+      codeLink: "https://github.com/MUGISHA-Pascal/AgriGrowth",
+      image: agrigrowth,
     },
     {
       name: "Rewind",
