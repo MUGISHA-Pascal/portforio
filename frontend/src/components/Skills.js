@@ -28,11 +28,11 @@ import { SiPytorch } from "react-icons/si";
 import pandasIcon from "../assets/pandas.png";
 import tensolFlowIcon from "../assets/tensolflow.png";
 import opencvIcon from "../assets/opencv.png";
-
+import { Element } from "react-scroll";
 const Skills = ({ id }) => {
   return (
-    <section
-      id={id}
+    <Element
+      name={id}
       className="bg-white flex flex-col justify-center items-center pb-[70px] max-md:pb-[30px] w-full"
     >
       <motion.div className="bg-custom-purple h-[5px] max-md:h-[3px] max-md:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
@@ -296,7 +296,7 @@ const Skills = ({ id }) => {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 

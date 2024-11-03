@@ -27,6 +27,7 @@ import Librax from "../assets/Librax.png";
 import userhub from "../assets/userhub.png";
 import agrigrowth from "../assets/agrigrowth.png";
 import farm from "../assets/farm.png";
+import { Element } from "react-scroll";
 const Work = ({ id }) => {
   const [projectIndex, setProjectIndex] = useState(true);
   const projects = [
@@ -210,8 +211,8 @@ const Work = ({ id }) => {
     },
   ];
   return (
-    <section
-      id={id}
+    <Element
+      name={id}
       className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[70px] w-full max-md:pb-[30px] max-md:w-full"
     >
       <motion.div className="bg-custom-purple max-md:h-[3px] max-md:w-[180px] h-[5px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
@@ -309,7 +310,7 @@ const Work = ({ id }) => {
           </div>
         ))}
       </div>
-    </section>
+    </Element>
   );
 };
 

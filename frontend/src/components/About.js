@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
+import { Element } from "react-scroll";
 import userIcon from "../assets/userIcon.png";
 
 const About = ({ id }) => {
   return (
-    <section
-      id={id}
+    <Element
+      name={id}
       className="bg-[#D9D9D9] flex flex-col justify-center items-center pb-[100px] max-md:pb-[50px] w-full"
     >
       <motion.div className="bg-custom-purple h-[5px] max-md:h-[3px] max-md:w-[130px] shadow-custom rounded-br-md rounded-bl-md w-[300px]"></motion.div>
@@ -46,7 +47,7 @@ const About = ({ id }) => {
           </motion.a>
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 

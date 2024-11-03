@@ -5,8 +5,8 @@ import { IoMdArrowDropleft } from "react-icons/io";
 
 const Experience = ({ id }) => {
   return (
-    <section
-      id={id}
+    <Element
+      name={id}
       className="bg-[#D9D9D9] flex flex-col justify-center w-full items-center pb-[70px] max-md:pb-[30px] max-md:w-full"
     >
       <motion.div className="bg-custom-purple h-[5px] max-md:h-[3px] max-md:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
@@ -38,7 +38,7 @@ const Experience = ({ id }) => {
           </motion.div>
         </motion.div>
       </div>
-    </section>
+    </Element>
   );
 };
 

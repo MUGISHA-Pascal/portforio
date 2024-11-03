@@ -190,6 +190,10 @@ const Home = ({ id }) => {
                 className="hover:cursor-pointer"
                 initial="hidden"
                 to="home"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 Home
               </Link>
@@ -198,6 +202,10 @@ const Home = ({ id }) => {
                 whileHover="hover"
                 className="hover:cursor-pointer"
                 initial="hidden"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 to="about"
               >
                 About
@@ -208,6 +216,10 @@ const Home = ({ id }) => {
                 className="hover:cursor-pointer"
                 initial="hidden"
                 to="skills"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 Skills
               </Link>
@@ -217,6 +229,10 @@ const Home = ({ id }) => {
                 initial="hidden"
                 className="hover:cursor-pointer"
                 to="experience"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 Experience
               </Link>
@@ -226,6 +242,10 @@ const Home = ({ id }) => {
                 initial="hidden"
                 className="hover:cursor-pointer"
                 to="education"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 Education
               </Link>
@@ -235,6 +255,10 @@ const Home = ({ id }) => {
                 className="hover:cursor-pointer"
                 to="projects"
                 initial="hidden"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 Projects
               </Link>
@@ -243,6 +267,10 @@ const Home = ({ id }) => {
                 whileHover="hover"
                 className="hover:cursor-pointer"
                 initial="hidden"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 to="contact"
               >
                 Contact

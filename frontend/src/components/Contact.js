@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { AiFillMessage } from "react-icons/ai";
 import { RiSendPlaneFill } from "react-icons/ri";
 import loginImage from "../assets/loginPic.png";
+import { Element } from "react-scroll";
 import { FaPhone } from "react-icons/fa6";
 const Contact = ({ id }) => {
   const [name, setName] = useState("");
@@ -31,8 +32,8 @@ const Contact = ({ id }) => {
     setMessage("");
   };
   return (
-    <section
-      id={id}
+    <Element
+      name={id}
       className="bg-[#FFFFFF] w-full flex flex-col justify-center items-center pb-[70px]  max-md:pb-[30px] max-md:w-full"
     >
       <motion.div className="bg-custom-purple h-[5px] max-md:h-[3px] max-md:w-[180px] shadow-custom rounded-br-md rounded-bl-md w-[400px]"></motion.div>
@@ -107,7 +108,7 @@ const Contact = ({ id }) => {
           className="w-[300px] h-[300px] max-md:w-[120px] max-md:h-[120px]"
         />
       </div>
-    </section>
+    </Element>
   );
 };
 
