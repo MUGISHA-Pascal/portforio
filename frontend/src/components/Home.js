@@ -5,6 +5,7 @@ import { FaCode } from "react-icons/fa6";
 import ParticleBackground from "./ParticleBackground";
 import { TiThMenu } from "react-icons/ti";
 import { Link } from "react-scroll";
+import { Element } from "react-scroll";
 
 const Home = ({ id }) => {
   const [navExist, setNavExist] = useState(true);
@@ -79,7 +80,7 @@ const Home = ({ id }) => {
                     to="home"
                     initial="hidden2"
                     spy={true}
-                    offset={50}
+                    offset={0}
                   >
                     <p>Home</p>
                   </Link>
@@ -88,7 +89,7 @@ const Home = ({ id }) => {
                     duration={500}
                     spy={true}
                     className="hover:cursor-pointer"
-                    offset={50}
+                    offset={0}
                     to="about"
                     variants={navVariants2}
                     whileHover="hover2"
@@ -101,7 +102,7 @@ const Home = ({ id }) => {
                     className="hover:cursor-pointer"
                     duration={500}
                     spy={true}
-                    offset={50}
+                    offset={0}
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
@@ -113,7 +114,7 @@ const Home = ({ id }) => {
                     smooth={true}
                     className="hover:cursor-pointer"
                     spy={true}
-                    offset={50}
+                    offset={0}
                     duration={500}
                     variants={navVariants2}
                     whileHover="hover2"
@@ -127,7 +128,7 @@ const Home = ({ id }) => {
                     duration={500}
                     className="hover:cursor-pointer"
                     spy={true}
-                    offset={50}
+                    offset={0}
                     to="education"
                     variants={navVariants2}
                     whileHover="hover2"
@@ -138,7 +139,7 @@ const Home = ({ id }) => {
                   <Link
                     smooth={true}
                     spy={true}
-                    offset={50}
+                    offset={0}
                     className="hover:cursor-pointer"
                     duration={500}
                     to="projects"
@@ -153,7 +154,7 @@ const Home = ({ id }) => {
                     duration={500}
                     spy={true}
                     className="hover:cursor-pointer"
-                    offset={50}
+                    offset={0}
                     to="contact"
                     variants={navVariants2}
                     whileHover="hover2"
@@ -192,7 +193,7 @@ const Home = ({ id }) => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 Home
@@ -204,7 +205,7 @@ const Home = ({ id }) => {
                 initial="hidden"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
                 to="about"
               >
@@ -218,7 +219,7 @@ const Home = ({ id }) => {
                 to="skills"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 Skills
@@ -231,7 +232,7 @@ const Home = ({ id }) => {
                 to="experience"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 Experience
@@ -244,7 +245,7 @@ const Home = ({ id }) => {
                 to="education"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 Education
@@ -257,7 +258,7 @@ const Home = ({ id }) => {
                 initial="hidden"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 Projects
@@ -269,7 +270,7 @@ const Home = ({ id }) => {
                 initial="hidden"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
                 to="contact"
               >
@@ -279,7 +280,7 @@ const Home = ({ id }) => {
           </motion.nav>
         )}
       </header>
-      <section
+      <Element
         id={id}
         className="flex relative md:ml-[270px] flex-row pt-[100px] w-full items-center mb-[120px] max-md:mb-[70px] max-md:pt-[50px]"
       >
@@ -301,7 +302,7 @@ const Home = ({ id }) => {
             />
           </div>
         </div>
-      </section>
+      </Element>
     </div>
   );
 };
