@@ -2,6 +2,7 @@ import React from "react";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { IoMdArrowDropleft } from "react-icons/io";
+import { Element } from "react-scroll";
 
 const Experience = ({ id }) => {
   return (
