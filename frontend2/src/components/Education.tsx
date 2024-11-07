@@ -3,7 +3,7 @@ import { FaGraduationCap } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { IoMdArrowDropleft } from "react-icons/io";
 import { Element } from "react-scroll";
-const Education = ({ id }) => {
+const Education = ({ id }:{id:string}) => {
   return (
     <Element
       name={id}

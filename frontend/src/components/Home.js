@@ -80,7 +80,7 @@ const Home = ({ id }) => {
                     to="home"
                     initial="hidden2"
                     spy={true}
-                    offset={0}
+                    offset={-10}
                   >
                     <p>Home</p>
                   </Link>
@@ -89,7 +89,7 @@ const Home = ({ id }) => {
                     duration={500}
                     spy={true}
                     className="hover:cursor-pointer"
-                    offset={0}
+                    offset={-10}
                     to="about"
                     variants={navVariants2}
                     whileHover="hover2"
@@ -102,7 +102,7 @@ const Home = ({ id }) => {
                     className="hover:cursor-pointer"
                     duration={500}
                     spy={true}
-                    offset={0}
+                    offset={-10}
                     variants={navVariants2}
                     whileHover="hover2"
                     initial="hidden2"
@@ -114,7 +114,7 @@ const Home = ({ id }) => {
                     smooth={true}
                     className="hover:cursor-pointer"
                     spy={true}
-                    offset={0}
+                    offset={-10}
                     duration={500}
                     variants={navVariants2}
                     whileHover="hover2"
@@ -128,7 +128,7 @@ const Home = ({ id }) => {
                     duration={500}
                     className="hover:cursor-pointer"
                     spy={true}
-                    offset={0}
+                    offset={-10}
                     to="education"
                     variants={navVariants2}
                     whileHover="hover2"
@@ -139,7 +139,7 @@ const Home = ({ id }) => {
                   <Link
                     smooth={true}
                     spy={true}
-                    offset={0}
+                    offset={-60}
                     className="hover:cursor-pointer"
                     duration={500}
                     to="projects"
@@ -154,7 +154,7 @@ const Home = ({ id }) => {
                     duration={500}
                     spy={true}
                     className="hover:cursor-pointer"
-                    offset={0}
+                    offset={-10}
                     to="contact"
                     variants={navVariants2}
                     whileHover="hover2"
@@ -181,10 +181,10 @@ const Home = ({ id }) => {
               duration: 0.5,
               delay: 0.1,
             }}
-            className="fixed flex flex-row space-x-8 justify-center z-30 items-center bg-custom-purple pl-8 pr-8 h-14 text-white font-inter rounded-br-3xl rounded-bl-3xl shadow-custom"
+            className="fixed flex flex-row space-x-8 top-[10px] justify-center z-30 items-center bg-custom-purple p-4 h-[50px] text-white font-inter rounded-full shadow-custom"
           >
             <FaCode className="font-bold text-white text-2xl" />
-            <div className="flex space-x-8">
+            <div className="flex space-x-8 text-[14px]">
               <Link
                 variants={navVariants}
                 whileHover="hover"
@@ -193,7 +193,7 @@ const Home = ({ id }) => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Home
@@ -205,7 +205,7 @@ const Home = ({ id }) => {
                 initial="hidden"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
                 to="about"
               >
@@ -219,7 +219,7 @@ const Home = ({ id }) => {
                 to="skills"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Skills
@@ -232,7 +232,7 @@ const Home = ({ id }) => {
                 to="experience"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Experience
@@ -245,7 +245,7 @@ const Home = ({ id }) => {
                 to="education"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Education
@@ -258,7 +258,7 @@ const Home = ({ id }) => {
                 initial="hidden"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Projects
@@ -270,7 +270,7 @@ const Home = ({ id }) => {
                 initial="hidden"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
                 to="contact"
               >

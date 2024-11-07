@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import { GrContact } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { FaUser } from "react-icons/fa";
@@ -11,10 +11,10 @@ import { FaPhone } from "react-icons/fa6";
 const Contact = ({ id }: { id: string }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState(null);
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     const coll_message =
       message + ", phone number " + phone + " and name is " + name;
@@ -104,6 +104,7 @@ const Contact = ({ id }: { id: string }) => {
           </motion.button>
         </form>
         <img
+          alt="login image"
           src={loginImage}
           className="w-[300px] h-[300px] max-md:w-[120px] max-md:h-[120px]"
         />

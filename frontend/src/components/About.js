@@ -40,9 +40,9 @@ const About = ({ id }) => {
           </p>
           <motion.a
             href="/resume.pdf"
-            className="bg-custom-purple shadow-custom w-[140px] max-md:w-[100px] max-md:text-[14px] max-md: text-white font-bold text-[17px] p-[4px] rounded-[5px] flex flex-row items-center justify-center space-x-[12px]"
+            className="bg-custom-purple h-[40px] shadow-custom w-[120px] max-md:w-[100px] max-md:text-[14px] max-md: text-white font-bold text-[15px] p-[4px] rounded-full flex flex-row items-center justify-center space-x-[12px]"
           >
-            <span className="pb-1">resume</span>
+            <span className="">resume</span>
             <IoIosArrowForward className="font-bold" />
           </motion.a>
         </div>

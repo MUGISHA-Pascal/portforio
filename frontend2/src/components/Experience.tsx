@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { IoMdArrowDropleft } from "react-icons/io";
 import { Element } from "react-scroll";
 
-const Experience = ({ id }) => {
+const Experience = ({ id }: { id: string }) => {
   return (
     <Element
       name={id}

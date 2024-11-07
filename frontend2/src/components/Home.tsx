@@ -7,7 +7,7 @@ import { TiThMenu } from "react-icons/ti";
 import { Link } from "react-scroll";
 import { Element } from "react-scroll";
 
-const Home = ({ id }) => {
+const Home = ({ id }: { id: string }) => {
   const [navExist, setNavExist] = useState(true);
   const navVariants = {
     hover: {
@@ -31,11 +31,11 @@ const Home = ({ id }) => {
   };
   const menuToggle = () => {
     const displayDiv = document.getElementById("displayDiv");
-    if (displayDiv.classList.contains("hidden")) {
-      displayDiv.classList.remove("hidden");
-      displayDiv.classList.add("flex");
+    if (displayDiv!.classList.contains("hidden")) {
+      displayDiv!.classList.remove("hidden");
+      displayDiv!.classList.add("flex");
     } else {
-      displayDiv.classList.add("hidden");
+      displayDiv!.classList.add("hidden");
     }
   };
 
@@ -72,13 +72,10 @@ const Home = ({ id }) => {
                   className="hidden text-[10px] flex-col rounded-[10px] space-y-[10px] items-center justify-center z-10 h-[200px] w-[170px] right-[7px] absolute bg-custom-purple text-white"
                 >
                   <Link
-                    variants={navVariants2}
-                    whileHover="hover2"
                     smooth={true}
                     duration={500}
                     className="hover:cursor-pointer"
                     to="home"
-                    initial="hidden2"
                     spy={true}
                     offset={0}
                   >
@@ -91,9 +88,6 @@ const Home = ({ id }) => {
                     className="hover:cursor-pointer"
                     offset={0}
                     to="about"
-                    variants={navVariants2}
-                    whileHover="hover2"
-                    initial="hidden2"
                   >
                     About
                   </Link>
@@ -103,9 +97,6 @@ const Home = ({ id }) => {
                     duration={500}
                     spy={true}
                     offset={0}
-                    variants={navVariants2}
-                    whileHover="hover2"
-                    initial="hidden2"
                     to="skills"
                   >
                     Skills
@@ -116,9 +107,6 @@ const Home = ({ id }) => {
                     spy={true}
                     offset={0}
                     duration={500}
-                    variants={navVariants2}
-                    whileHover="hover2"
-                    initial="hidden2"
                     to="experience"
                   >
                     Experience
@@ -130,9 +118,6 @@ const Home = ({ id }) => {
                     spy={true}
                     offset={0}
                     to="education"
-                    variants={navVariants2}
-                    whileHover="hover2"
-                    initial="hidden2"
                   >
                     Education
                   </Link>
@@ -143,9 +128,6 @@ const Home = ({ id }) => {
                     className="hover:cursor-pointer"
                     duration={500}
                     to="projects"
-                    variants={navVariants2}
-                    whileHover="hover2"
-                    initial="hidden2"
                   >
                     Projects
                   </Link>
@@ -156,9 +138,6 @@ const Home = ({ id }) => {
                     className="hover:cursor-pointer"
                     offset={0}
                     to="contact"
-                    variants={navVariants2}
-                    whileHover="hover2"
-                    initial="hidden2"
                   >
                     Contact
                   </Link>
@@ -186,10 +165,7 @@ const Home = ({ id }) => {
             <FaCode className="font-bold text-white text-2xl" />
             <div className="flex space-x-8">
               <Link
-                variants={navVariants}
-                whileHover="hover"
                 className="hover:cursor-pointer"
-                initial="hidden"
                 to="home"
                 spy={true}
                 smooth={true}
@@ -199,10 +175,7 @@ const Home = ({ id }) => {
                 Home
               </Link>
               <Link
-                variants={navVariants}
-                whileHover="hover"
                 className="hover:cursor-pointer"
-                initial="hidden"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -212,10 +185,7 @@ const Home = ({ id }) => {
                 About
               </Link>
               <Link
-                variants={navVariants}
-                whileHover="hover"
                 className="hover:cursor-pointer"
-                initial="hidden"
                 to="skills"
                 spy={true}
                 smooth={true}
@@ -225,9 +195,6 @@ const Home = ({ id }) => {
                 Skills
               </Link>
               <Link
-                variants={navVariants}
-                whileHover="hover"
-                initial="hidden"
                 className="hover:cursor-pointer"
                 to="experience"
                 spy={true}
@@ -238,9 +205,6 @@ const Home = ({ id }) => {
                 Experience
               </Link>
               <Link
-                variants={navVariants}
-                whileHover="hover"
-                initial="hidden"
                 className="hover:cursor-pointer"
                 to="education"
                 spy={true}
@@ -251,11 +215,8 @@ const Home = ({ id }) => {
                 Education
               </Link>
               <Link
-                variants={navVariants}
-                whileHover="hover"
                 className="hover:cursor-pointer"
                 to="projects"
-                initial="hidden"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -264,10 +225,7 @@ const Home = ({ id }) => {
                 Projects
               </Link>
               <Link
-                variants={navVariants}
-                whileHover="hover"
                 className="hover:cursor-pointer"
-                initial="hidden"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -281,7 +239,7 @@ const Home = ({ id }) => {
         )}
       </header>
       <Element
-        id={id}
+        name={id}
         className="flex relative md:ml-[270px] flex-row pt-[100px] w-full items-center mb-[120px] max-md:mb-[70px] max-md:pt-[50px]"
       >
         <ParticleBackground />
