@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Element } from "react-scroll";
 import userIcon from "../assets/userIcon.png";
 
-const About = ({ id }) => {
+const About = ({ id }: { id: string }) => {
   return (
     <Element
       name={id}

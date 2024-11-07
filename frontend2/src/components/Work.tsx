@@ -28,8 +28,10 @@ import userhub from "../assets/userhub.png";
 import agrigrowth from "../assets/agrigrowth.png";
 import farm from "../assets/farm.png";
 import { Element } from "react-scroll";
-const Work = ({ id }) => {
-  const [projectIndex, setProjectIndex] = useState(true);
+const Work = ({ id }: { id: string }) => {
+  const [projectIndex, setProjectIndex] = useState<boolean | null | number>(
+    true
+  );
   const projects = [
     {
       name: "Farm2Global",

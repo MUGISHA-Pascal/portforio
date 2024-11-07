@@ -29,7 +29,7 @@ import pandasIcon from "../assets/pandas.png";
 import tensolFlowIcon from "../assets/tensolflow.png";
 import opencvIcon from "../assets/opencv.png";
 import { Element } from "react-scroll";
-const Skills = ({ id }) => {
+const Skills = ({ id }: { id: string }) => {
   return (
     <Element
       name={id}
