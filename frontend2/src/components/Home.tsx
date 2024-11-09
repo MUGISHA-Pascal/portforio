@@ -9,33 +9,13 @@ import { Element } from "react-scroll";
 
 const Home = ({ id }: { id: string }) => {
   const [navExist, setNavExist] = useState(true);
-  const navVariants = {
-    hover: {
-      borderBottomColor: "white",
-      borderBottomWidth: "3px",
-    },
-    hidden: {
-      borderBottomColor: "#290B68",
-      borderBottomWidth: "3px",
-    },
-  };
-  const navVariants2 = {
-    hover2: {
-      borderBottomColor: "white",
-      borderBottomWidth: "3px",
-    },
-    hidden2: {
-      borderBottomColor: "#290B68",
-      borderBottomWidth: "3px",
-    },
-  };
   const menuToggle = () => {
     const displayDiv = document.getElementById("displayDiv");
-    if (displayDiv!.classList.contains("hidden")) {
-      displayDiv!.classList.remove("hidden");
-      displayDiv!.classList.add("flex");
+    if (displayDiv?.classList.contains("hidden")) {
+      displayDiv.classList.remove("hidden");
+      displayDiv.classList.add("flex");
     } else {
-      displayDiv!.classList.add("hidden");
+      displayDiv?.classList.add("hidden");
     }
   };
 
@@ -77,7 +57,7 @@ const Home = ({ id }: { id: string }) => {
                     className="hover:cursor-pointer"
                     to="home"
                     spy={true}
-                    offset={0}
+                    offset={-10}
                   >
                     <p>Home</p>
                   </Link>
@@ -86,7 +66,7 @@ const Home = ({ id }: { id: string }) => {
                     duration={500}
                     spy={true}
                     className="hover:cursor-pointer"
-                    offset={0}
+                    offset={-10}
                     to="about"
                   >
                     About
@@ -96,7 +76,7 @@ const Home = ({ id }: { id: string }) => {
                     className="hover:cursor-pointer"
                     duration={500}
                     spy={true}
-                    offset={0}
+                    offset={-10}
                     to="skills"
                   >
                     Skills
@@ -105,7 +85,7 @@ const Home = ({ id }: { id: string }) => {
                     smooth={true}
                     className="hover:cursor-pointer"
                     spy={true}
-                    offset={0}
+                    offset={-10}
                     duration={500}
                     to="experience"
                   >
@@ -116,7 +96,7 @@ const Home = ({ id }: { id: string }) => {
                     duration={500}
                     className="hover:cursor-pointer"
                     spy={true}
-                    offset={0}
+                    offset={-10}
                     to="education"
                   >
                     Education
@@ -124,7 +104,7 @@ const Home = ({ id }: { id: string }) => {
                   <Link
                     smooth={true}
                     spy={true}
-                    offset={0}
+                    offset={-60}
                     className="hover:cursor-pointer"
                     duration={500}
                     to="projects"
@@ -136,7 +116,7 @@ const Home = ({ id }: { id: string }) => {
                     duration={500}
                     spy={true}
                     className="hover:cursor-pointer"
-                    offset={0}
+                    offset={-10}
                     to="contact"
                   >
                     Contact
@@ -160,16 +140,16 @@ const Home = ({ id }: { id: string }) => {
               duration: 0.5,
               delay: 0.1,
             }}
-            className="fixed flex flex-row space-x-8 justify-center z-30 items-center bg-custom-purple pl-8 pr-8 h-14 text-white font-inter rounded-br-3xl rounded-bl-3xl shadow-custom"
+            className="fixed flex flex-row space-x-8 top-[10px] justify-center z-30 items-center bg-custom-purple p-4 h-[50px] text-white font-inter rounded-full shadow-custom"
           >
             <FaCode className="font-bold text-white text-2xl" />
-            <div className="flex space-x-8">
+            <div className="flex space-x-8 text-[14px]">
               <Link
                 className="hover:cursor-pointer"
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Home
@@ -178,7 +158,7 @@ const Home = ({ id }: { id: string }) => {
                 className="hover:cursor-pointer"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
                 to="about"
               >
@@ -189,7 +169,7 @@ const Home = ({ id }: { id: string }) => {
                 to="skills"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Skills
@@ -199,7 +179,7 @@ const Home = ({ id }: { id: string }) => {
                 to="experience"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Experience
@@ -209,7 +189,7 @@ const Home = ({ id }: { id: string }) => {
                 to="education"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Education
@@ -219,7 +199,7 @@ const Home = ({ id }: { id: string }) => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
               >
                 Projects
@@ -228,7 +208,7 @@ const Home = ({ id }: { id: string }) => {
                 className="hover:cursor-pointer"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-60}
                 duration={500}
                 to="contact"
               >
