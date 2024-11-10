@@ -27,12 +27,21 @@ import Librax from "../assets/Librax.png";
 import userhub from "../assets/userhub.png";
 import agrigrowth from "../assets/agrigrowth.png";
 import farm from "../assets/farm.png";
+import lessonTracker from "../assets/lessonTracker.png";
 import { Element } from "react-scroll";
 const Work = ({ id }: { id: string }) => {
   const [projectIndex, setProjectIndex] = useState<boolean | null | number>(
     true
   );
   const projects = [
+    {
+      name: "LessonTrack-API",
+      description:
+        "A documented rest API backend for lesson tracking functionality ( tested using jest)",
+      ViewLink: "https://lessontrack-api.onrender.com/docs/",
+      codeLink: "https://github.com/MUGISHA-Pascal/LessonTrack-API",
+      image: lessonTracker,
+    },
     {
       name: "Farm2Global",
       description: "a web based app to support agriculture",
