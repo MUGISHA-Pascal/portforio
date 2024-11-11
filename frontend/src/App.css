@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #290b68;
+  border-radius: 10px;
+}
 
 .App-logo {
   height: 40vmin;
