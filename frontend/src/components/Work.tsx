@@ -50,19 +50,20 @@ const Work = ({ id }: { id: string }) => {
       image: farm,
     },
     {
-      name: "UserHub",
-      description: "a web based application to control users",
-      ViewLink: "https://userhub-one.vercel.app/",
-      codeLink: "https://github.com/MUGISHA-Pascal/UserHub",
-      image: userhub,
-    },
-    {
       name: "TaskTrack",
       description: "web based app to keep track of tasks",
       ViewLink: "https://task-track-peach.vercel.app",
       codeLink: "https://github.com/MUGISHA-Pascal/TaskTrack",
       image: TaskTrack,
     },
+    {
+      name: "UserHub",
+      description: "a web based application to control users",
+      ViewLink: "https://userhub-one.vercel.app/",
+      codeLink: "https://github.com/MUGISHA-Pascal/UserHub",
+      image: userhub,
+    },
+
     {
       name: "TaskFlow",
       description:
