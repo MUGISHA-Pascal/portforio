@@ -8,7 +8,22 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Spinner from "./components/Spinner";
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsLoaded(true);
+    }, 2000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+  if (!isLoaded) {
+    return <Spinner />;
+  }
+
   return (
     <div className="App overflow-x-hidden">
       <div className="font-inter relative flex flex-col items-center justify-center">
