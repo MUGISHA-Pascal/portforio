@@ -63,6 +63,14 @@ const Work = ({ id }: { id: string }) => {
       codeLink: "https://github.com/MUGISHA-Pascal/UserHub",
       image: userhub,
     },
+    {
+      name: "AgriGrowth",
+      description:
+        "a web based application that deals with insurance claim functionalities",
+      ViewLink: "https://agri-growth.vercel.app/",
+      codeLink: "https://github.com/MUGISHA-Pascal/AgriGrowth",
+      image: agrigrowth,
+    },
 
     {
       name: "TaskFlow",
@@ -125,14 +133,7 @@ const Work = ({ id }: { id: string }) => {
       codeLink: "https://github.com/MUGISHA-Pascal/Claimstream",
       image: ClaimStream,
     },
-    {
-      name: "AgriGrowth",
-      description:
-        "a web based application that deals with insurance claim functionalities",
-      ViewLink: "https://agri-growth.vercel.app/",
-      codeLink: "https://github.com/MUGISHA-Pascal/AgriGrowth",
-      image: agrigrowth,
-    },
+
     {
       name: "Rewind",
       description: "a web based application that manage insurance claims",
