@@ -29,6 +29,7 @@ import agrigrowth from "../assets/agrigrowth.png";
 import farm from "../assets/farm.png";
 import lessonTracker from "../assets/lessonTracker.png";
 import { Element } from "react-scroll";
+import lesson from "../assets/lesson.png";
 const Work = ({ id }: { id: string }) => {
   const [projectIndex, setProjectIndex] = useState<boolean | null | number>(
     true
@@ -70,6 +71,13 @@ const Work = ({ id }: { id: string }) => {
       ViewLink: "https://agri-growth.vercel.app/",
       codeLink: "https://github.com/MUGISHA-Pascal/AgriGrowth",
       image: agrigrowth,
+    },
+    {
+      name: "LessonTracker",
+      description: "a web based application for lesson tracking functionality",
+      ViewLink: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
+      codeLink: "https://github.com/MUGISHA-Pascal/LessonTracking-frontend",
+      image: lesson,
     },
 
     {
